@@ -8,16 +8,20 @@
   margin-bottom: -1px !important;
   position: relative;
 }
+
 .tab-content {
   padding: 2rem;
 }
+
 .tab-pane {
   display: none;
 }
+
 .tab-pane.is-active {
   display: block;
   position: relative;
 }
+
 .is-active {
   display: initial;
 }
@@ -41,6 +45,7 @@
   overflow: hidden;
   max-width: 100%;
 }
+
 .embed-container iframe,
 .embed-container object,
 .embed-container embed {
@@ -80,10 +85,10 @@
   position: relative;
   transition: all 0.2s ease-in-out;
 }
+
 .is-shady:hover {
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
 }
-
 
 .has-same-height .card {
   height: 350px;
@@ -115,11 +120,13 @@
   line-height: 2.8;
   margin-bottom: 1rem;
 }
+
 .post {
   margin: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #E6EAEE;
 }
+
 .post:last-child {
   padding-bottom: 0;
   border-bottom: none;
@@ -127,13 +134,6 @@
 
 .forum-list li {
   margin-bottom: .5rem;
-}
-
-
-@media screen and (max-width: 1087px) {
-  .navbar-menu {
-    background-color: #888;
-  }
 }
 
 .logo-link {
@@ -176,3 +176,34 @@ li {
   height: 40px;
   background-size: contain;
 }
+
+button:focus, a:focus {
+  border: 2px solid darkgreen;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+a.screenreader-text {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+}
+
+a.screenreader-text:focus {
+   color: green;
+   display: inline-block;
+   height: auto;
+   width: auto;
+   position: static;
+   margin: auto;
+ }
