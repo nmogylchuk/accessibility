@@ -280,29 +280,29 @@
     <div class="tabs is-boxed is-centered main-menu" id="nav">
       <ul role="tablist" aria-label="Tabs list">
         <li data-target="pane-1" class="is-active" role="tab" aria-selected="true" aria-controls="pane-1" id="tab-1">
-          <a>
+          <button>
             <span class="icon is-small" aria-hidden="true"><i class="fa fa-image"></i></span>
-            <span aria-label="picture will open in a new window">Pictures</span>
-          </a>
+            <span>Pictures</span>
+          </button>
         </li>
         <li data-target="pane-3" role="tab" aria-selected="false" aria-controls="pane-3" id="tab-2">
-          <a>
+          <button>
             <span class="icon is-small"><i class="fab fa-superpowers" aria-hidden="true"></i></span>
-            <span aria-label="team will open in a new window">Team</span>
-          </a>
+            <span>Team</span>
+          </button>
         </li>
-        <li data-target="pane-4" role="tab" aria-controls="pane-4" id="tab-3">
-          <a>
+        <li data-target="pane-4" aria-selected="false" role="tab" aria-controls="pane-4" id="tab-3">
+          <button>
             <span class="icon is-small"><i class="fa fa-film" aria-hidden="true"></i></span>
-            <span aria-label="video will open in a new window">Video</span>
-          </a>
+            <span>Video</span>
+          </button>
         </li>
       </ul>
     </div>
   </section>
 
   <div class="tab-content container">
-    <div class="tab-pane is-active level" id="pane-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+    <div class="tab-pane is-active" id="pane-1" role="tabpanel" aria-labelledby="tab-1">
       <div class="container">
         <div class="columns features">
           <div class="column is-4">
@@ -357,7 +357,7 @@
       </div>
     </div>
 
-    <div class="tab-pane" id="pane-3" role="tabpanel" tabindex="0" aria-labelledby="tab-2">
+    <div class="tab-pane" id="pane-3" role="tabpanel" aria-labelledby="tab-2">
       <div class="columns medias">
         <div class="column">
           <div class="media">
@@ -401,7 +401,7 @@
             </div>
             <div class="media-content">
               <div class="content">
-                <div><a><strong>io Ipsum</strong></a></div>
+                <div><a href="#"><strong>io Ipsum</strong></a></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.</p>
               </div>
             </div>
@@ -410,7 +410,7 @@
       </div>
     </div>
 
-    <div class="tab-pane" id="pane-4" role="tabpanel" tabindex="0" aria-labelledby="tab-3">
+    <div class="tab-pane" id="pane-4" role="tabpanel" aria-labelledby="tab-3">
       <div class="columns is-centered">
         <div class="column is-three-quarters">
           <h3 class="title has-text-centered">Inspired video</h3>
@@ -888,14 +888,14 @@
         <div class="field">
           <label for="name" class="label">Name</label>
           <div class="control">
-            <input id="name" class="input" type="text" placeholder="Text input">
+            <input id="name" class="input" type="text" aria-required="true" placeholder="Put your name">
           </div>
         </div>
 
         <div class="field">
           <label for="user" class="label">Username</label>
           <div class="control has-icons-left has-icons-right">
-            <input id="user" class="input is-success" type="text">
+            <input id="user" class="input is-success" type="text" aria-required="true">
             <span class="icon is-small is-left">
               <i class="fas fa-user" aria-hidden="true"></i>
             </span>
@@ -909,11 +909,11 @@
         <div class="field">
           <label for="email" class="label">Email</label>
           <div class="control has-icons-left has-icons-right">
-            <input id="email" class="input is-danger" type="email" placeholder="nataliia.mogylchuk@gmail.com">
-            <span class="icon is-small is-left">
-              <i class="fas fa-envelope" aria-hidden="true"></i>
+            <input id="email" class="input is-danger" type="email" aria-placeholder="nataliia.mogylchuk@gmail.com" aria-required="true" placeholder="nataliia.mogylchuk@gmail.com">
+            <span class="icon is-small is-left" aria-hidden="true">
+              <i class="fas fa-envelope"></i>
             </span>
-            <span class="icon is-small is-right">
+            <span class="icon is-small is-right" aria-hidden="true">
               <i class="fas fa-exclamation-triangle"></i>
             </span>
           </div>
@@ -935,7 +935,7 @@
         <div class="field">
           <label for="message" class="label">Message</label>
           <div class="control">
-            <textarea id="message" class="textarea" placeholder="Textarea"></textarea>
+            <textarea aria-required="true" id="message" class="textarea" placeholder="Textarea"></textarea>
           </div>
         </div>
 
@@ -1164,7 +1164,8 @@
         </div>
       </div>
     </div>
-    <button aria-label="close modal window" class="modal-close is-large"></button>
+    <button aria-label="close modal window" aria-describedby="closeDescription" class="modal-close is-large"></button>
+    <p id="closeDescription" class="visually-hidden">If you close this window, you will back to main page</p>
   </div>
 
   <figure id="modal-image1" class="modal modal-fx-3dSlit">

@@ -200,10 +200,26 @@ a.screenreader-text {
 }
 
 a.screenreader-text:focus {
-   color: green;
+    color: black;
    display: inline-block;
    height: auto;
    width: auto;
    position: static;
    margin: auto;
  }
+
+a:focus,
+a.box:focus,
+button:focus,
+.button.is-white:focus:not(:active),
+.button.is-info:focus:not(:active),
+.button.is-link:focus:not(:active),
+.button:focus:not(:active),
+input:focus,
+.input:focus,
+.textarea:focus,
+.select select:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow:  0px 0px 0px 2px red;
+}
