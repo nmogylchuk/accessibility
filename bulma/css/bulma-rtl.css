@@ -460,7 +460,9 @@ table th {
 }
 
 a.box:hover, a.box:focus {
-  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px #485fc7;
+  outline: none;
+  border-color: transparent;
+  box-shadow:  0px 0px 0px 2px red;
 }
 
 a.box:active {
@@ -512,12 +514,15 @@ a.box:active {
 }
 
 .button:focus, .button.is-focused {
-  border-color: darkgreen;
-  color: #363636;
+  outline: none;
+  border-color: transparent;
+  box-shadow:  0px 0px 0px 2px red;
 }
 
 .button:focus:not(:active), .button.is-focused:not(:active) {
-  box-shadow: 0 0 0 0.125em rgba(72, 95, 199, 0.25);
+  outline: none;
+  border-color: transparent;
+  box-shadow:  0px 0px 0px 2px red;
 }
 
 .button:active, .button.is-active {
@@ -574,12 +579,14 @@ fieldset[disabled] .button.is-text {
 }
 
 .button.is-white:focus, .button.is-white.is-focused {
-  border-color: transparent;
+  /*border-color: transparent;*/
   color: #0a0a0a;
 }
 
 .button.is-white:focus:not(:active), .button.is-white.is-focused:not(:active) {
-  box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25);
+  outline: none;
+  border-color: transparent;
+  box-shadow:  0px 0px 0px 2px red;
 }
 
 .button.is-white:active, .button.is-white.is-active {
@@ -1126,7 +1133,9 @@ fieldset[disabled] .button.is-primary.is-inverted.is-outlined {
 }
 
 .button.is-link:focus:not(:active), .button.is-link.is-focused:not(:active) {
-  box-shadow: 0 0 0 0.125em rgba(72, 95, 199, 0.25);
+  outline: none;
+  border-color: transparent;
+  box-shadow:  0px 0px 0px 2px red;
 }
 
 .button.is-link:active, .button.is-link.is-active {
@@ -1249,7 +1258,9 @@ fieldset[disabled] .button.is-link.is-inverted.is-outlined {
 }
 
 .button.is-info:focus:not(:active), .button.is-info.is-focused:not(:active) {
-  box-shadow: 0 0 0 0.125em rgba(62, 142, 208, 0.25);
+  outline: none;
+  border-color: transparent;
+  box-shadow:  0px 0px 0px 2px red;
 }
 
 .button.is-info:active, .button.is-info.is-active {
@@ -3280,8 +3291,9 @@ a.tag:hover {
 }
 
 .input:focus, .textarea:focus, .select select:focus, .is-focused.input, .is-focused.textarea, .select select.is-focused, .input:active, .textarea:active, .select select:active, .is-active.input, .is-active.textarea, .select select.is-active {
-  border-color: #485fc7;
-  box-shadow: 0 0 0 0.125em rgba(72, 95, 199, 0.25);
+  outline: none;
+  border-color: transparent;
+  box-shadow:  0px 0px 0px 2px red;
 }
 
 .input[disabled], .textarea[disabled], .select select[disabled],
@@ -3342,7 +3354,9 @@ fieldset[disabled] .select select:-ms-input-placeholder,
 }
 
 .is-white.input:focus, .is-white.textarea:focus, .is-white.is-focused.input, .is-white.is-focused.textarea, .is-white.input:active, .is-white.textarea:active, .is-white.is-active.input, .is-white.is-active.textarea {
-  box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25);
+  outline: none;
+  border-color: transparent;
+  box-shadow:  0px 0px 0px 2px red;
 }
 
 .is-black.input, .is-black.textarea {
@@ -3350,7 +3364,9 @@ fieldset[disabled] .select select:-ms-input-placeholder,
 }
 
 .is-black.input:focus, .is-black.textarea:focus, .is-black.is-focused.input, .is-black.is-focused.textarea, .is-black.input:active, .is-black.textarea:active, .is-black.is-active.input, .is-black.is-active.textarea {
-  box-shadow: 0 0 0 0.125em rgba(10, 10, 10, 0.25);
+  outline: none;
+  border-color: transparent;
+  box-shadow:  0px 0px 0px 2px red;
 }
 
 .is-light.input, .is-light.textarea {
@@ -3358,7 +3374,9 @@ fieldset[disabled] .select select:-ms-input-placeholder,
 }
 
 .is-light.input:focus, .is-light.textarea:focus, .is-light.is-focused.input, .is-light.is-focused.textarea, .is-light.input:active, .is-light.textarea:active, .is-light.is-active.input, .is-light.is-active.textarea {
-  box-shadow: 0 0 0 0.125em rgba(245, 245, 245, 0.25);
+  outline: none;
+  border-color: transparent;
+  box-shadow:  0px 0px 0px 2px red;
 }
 
 .is-dark.input, .is-dark.textarea {
@@ -3366,7 +3384,9 @@ fieldset[disabled] .select select:-ms-input-placeholder,
 }
 
 .is-dark.input:focus, .is-dark.textarea:focus, .is-dark.is-focused.input, .is-dark.is-focused.textarea, .is-dark.input:active, .is-dark.textarea:active, .is-dark.is-active.input, .is-dark.is-active.textarea {
-  box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25);
+  outline: none;
+  border-color: transparent;
+  box-shadow:  0px 0px 0px 2px red;
 }
 
 .is-primary.input, .is-primary.textarea {
